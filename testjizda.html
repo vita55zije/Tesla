@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Testovací jízda</title>
+</head>
+<body id="bady5">
+    <header class="navos">
+       <div><img src="/images/logo.png" alt="Tesla - Logo" class="logoo"></div>
+        <a href="ModelS.html"><button class="tlacitko_zpet">Hlavní strana</button></a>
+    </header>
+    <main>
+        <div class="rodice">
+            <div class="textos"><h1>Naplánovat testovací jízdu</h1><p>Vyzkoušejte si testovací jízdu s vozem Tesla v prodejně ve vašem okolí. Řidiči musí vlastnit platný řidičský průkaz. Abyste mohli řídit automobily Tesla, musíte být držitelem platného řidičského průkazu už alespoň sedm let.</p></div>
+            <div class="container">
+                <button onclick="openPopup()"><a href="#"></a>Model S</button>
+                <button onclick="openPopup()"><a href="#"></a> Model 3</button>
+                <button onclick="openPopup()"><a href="#"></a>Model X</button>
+                <button onclick="openPopup()"><a href="#"></a>Model Y</button>
+            </div>
+                <div class="auto"><img src="/images/teslawhite.webp" alt="teslička"></div>
+        </div>
+        <div class="popup" id="popup">
+            <img src="/images/404-tick.png" alt="fajfka">
+            <h2>Děkujeme!</h2>
+            <p>Brzy se budete moct projet :D</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+    </main>
+    <script>
+        let popup =document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
