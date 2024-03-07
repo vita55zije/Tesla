@@ -95,9 +95,10 @@ nav .btn{
     padding: 10px 30px;
     margin-right: 5px;
     border-radius: 20%;
+    transition: 0.5s all;
 }
 nav .btn:hover{
-    background-color: white;
+    
     color: black;
     border: 2px solid black;
 }
